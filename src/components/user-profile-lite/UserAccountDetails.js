@@ -32,7 +32,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feFirstName"
                     placeholder="First Name"
-                    value="Sierra"
+                    value="Đăng"
                     onChange={() => {}}
                   />
                 </Col>
@@ -42,7 +42,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feLastName"
                     placeholder="Last Name"
-                    value="Brooks"
+                    value="Hải"
                     onChange={() => {}}
                   />
                 </Col>
@@ -55,7 +55,7 @@ const UserAccountDetails = ({ title }) => (
                     type="email"
                     id="feEmail"
                     placeholder="Email Address"
-                    value="sierra@example.com"
+                    value="nhdang.12b1.pdl@gmail.com"
                     onChange={() => {}}
                     autoComplete="email"
                   />
@@ -67,54 +67,46 @@ const UserAccountDetails = ({ title }) => (
                     type="password"
                     id="fePassword"
                     placeholder="Password"
-                    value="EX@MPL#P@$$w0RD"
+                    value="dang123"
                     onChange={() => {}}
                     autoComplete="current-password"
                   />
                 </Col>
               </Row>
               <FormGroup>
-                <label htmlFor="feAddress">Address</label>
+                <label htmlFor="feAddress">Phone</label>
                 <FormInput
                   id="feAddress"
-                  placeholder="Address"
-                  value="1234 Main St."
+                  placeholder="Phone"
+                  value="0935236262"
                   onChange={() => {}}
                 />
               </FormGroup>
               <Row form>
                 {/* City */}
                 <Col md="6" className="form-group">
-                  <label htmlFor="feCity">City</label>
+                  <label htmlFor="feCity">ID</label>
                   <FormInput
                     id="feCity"
-                    placeholder="City"
+                    placeholder=""
+                    value="15"
                     onChange={() => {}}
                   />
                 </Col>
                 {/* State */}
                 <Col md="4" className="form-group">
-                  <label htmlFor="feInputState">State</label>
+                  <label htmlFor="feInputState">Role</label>
                   <FormSelect id="feInputState">
-                    <option>Choose...</option>
-                    <option>...</option>
+                    <option>User</option>
+                    <option>Admin</option>
                   </FormSelect>
-                </Col>
-                {/* Zip Code */}
-                <Col md="2" className="form-group">
-                  <label htmlFor="feZipCode">Zip</label>
-                  <FormInput
-                    id="feZipCode"
-                    placeholder="Zip"
-                    onChange={() => {}}
-                  />
                 </Col>
               </Row>
               <Row form>
                 {/* Description */}
                 <Col md="12" className="form-group">
-                  <label htmlFor="feDescription">Description</label>
-                  <FormTextarea id="feDescription" rows="5" />
+                  <label htmlFor="feDescription">Mô Tả Bản Thân</label>
+                  <FormTextarea id="feDescription" rows="5"  value="đẹp trai nhất Huế"/>
                 </Col>
               </Row>
               <Button theme="accent">Update Account</Button>
@@ -134,7 +126,7 @@ UserAccountDetails.propTypes = {
 };
 
 UserAccountDetails.defaultProps = {
-  title: "Account Details"
+  title: "Thông Tin Chi Tiết"
 };
 
 export default UserAccountDetails;
